@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gothic Atelier — XBlack_ArachniDX</title>
+  <meta name="description" content="Alone Art, Revenge apparel, Malwear hacker drops — by XBlack_ArachniDX." />
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/corset_closed.jpg">
+  <link rel="stylesheet" href="styles.css" />
+  <script>window.CORSET_ENABLED = false;</script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1 aria-label="XBlack_ArachniDX"><span class="logo-text">XBlack_ArachniDX</span></h1>
+      <p class="tag">Enter the Atelier of Shadows</p>
+    </div>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#/" class="nav-link">Home</a>
+      <a href="#/section/tattoo_flash" class="nav-link">Tattoo Flash</a>
+      <a href="#/section/kitchen" class="nav-link">Kitchen Decor</a>
+      <a href="#/section/microbial" class="nav-link">Microbial Art</a>
+      <a href="#/section/merch" class="nav-link">Merch</a>
+      <a href="#/malwear" class="nav-link">Malwear</a>
+      <a href="#/commission" class="nav-link cta">Commission</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+  </header>
+
+  <section class="hero parallax">
+    <div class="hero-inner">
+      <h2>Atelier of Shadows</h2>
+      <p>Gothic prints, tattoo flash, microbial studies & merch — drops from live sessions.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">Follow on TikTok</a>
+        <a class="btn alt" href="#/commission">Commission a Piece</a>
+        <a class="btn alt" href="#/malwear">Explore Malwear</a>
+      </div>
+    </div>
+    <img class="hero-spider" src="assets/spider.svg" alt="" aria-hidden="true">
+    <img class="hero-microbe" src="assets/microbe.svg" alt="" aria-hidden="true">
+    <img class="hero-microscope" src="assets/microscope.svg" alt="" aria-hidden="true">
+  </section>
+
+  <main id="main" tabindex="-1" aria-live="polite"></main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div>
+      <p>Follow on TikTok for live drops: <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">@yourhandle</a></p>
+      <p>Payments & fulfillment via Printify — links on each product.</p>
+    </div>
+    <div class="credits">© <span id="year"></span> XBlack_ArachniDX</div>
+  </footer>
+
+  <!-- Corset overlay (safe if disabled) -->
+  <div id="corset-entry" aria-hidden="true">
+    <div class="corset-stage">
+      <div class="corset-half left" style="--img:url('assets/corset_closed.jpg')"></div>
+      <div class="corset-half right" style="--img:url('assets/corset_closed.jpg')"></div>
+      <div class="seam-glow"></div>
+      <img class="web-overlay" src="assets/web-fade.svg" alt="" />
+      <audio id="corset-audio" preload="auto"></audio>
+      <button class="corset-open-btn" aria-label="Open corset to enter">Open</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){ var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear(); });
+  </script>
+</body>
+</html>
